@@ -61,7 +61,7 @@
 			maxHeight,
 			minHeight,
 			boxOffset = 0,
-			callback = $.isFunction(options.callback),
+			callback = (typeof options.callback === "function"),
 			originalStyles = {
 				height: ta.style.height,
 				overflow: ta.style.overflow,
